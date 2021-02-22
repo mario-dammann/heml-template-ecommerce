@@ -1,0 +1,219 @@
+<heml>
+  <head>
+    <subject>TITLE</subject>
+    <style>
+      body {
+        padding: 20px;
+        background-color: #fff;
+        color: #333;
+      }
+
+      button {
+        margin: unset;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #66bb66;
+      }
+
+      a {
+        color: #66bb66;
+        text-decoration: none;
+      }
+
+      p {
+        margin: 0 0 20px 0;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .navigation {
+        padding: 20px 8px 10px 8px;
+
+      }
+
+      .navigation a {
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .navigation__link {
+        text-align: center;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f0f0f0;
+      }
+
+      .editorial {
+        padding: 0 10px;
+      }
+
+      .product {
+        padding: 20px 10px;
+      }
+
+      .product__description {
+        padding-left: 40px;
+      }
+
+       .product__price {
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+      }
+
+      .product__price--small {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+      }
+
+      .product__list column {
+        padding: 20px 10px;
+      }
+
+      .social-icon {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      .footer {
+        padding: 0 10px;
+      }
+
+      .footer column {
+        border-top: 2px dashed #aaa;
+        padding: 20px 0;
+      }
+
+       @media only screen and (max-width: 600px) {
+
+        .product__description {
+          padding-left: 0 !important;
+         }
+
+        .product, .product__list column {
+          padding-bottom: 60px !important;
+        }
+
+        .footer {
+          border-top: 2px dashed #aaa !important;
+        }
+
+        .footer column {
+        border-top: 0 none !important;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <container>
+
+  <a href="#"><img class="logo" src="https://via.placeholder.com/400x150/FFFFFF/66BB66/?text=Logo" alt="COMPANY" infer="" /></a>
+
+  <row class="navigation">
+    <column class="navigation__link">
+      <a href="#">Men</a>
+    </column>
+    <column class="navigation__link">
+      <a href="#">Women</a>
+    </column>
+     <column class="navigation__link">
+      <a href="#">New</a>
+    </column>
+    <column class="navigation__link">
+      <a href="#">Sale %</a>
+    </column>
+  </row>
+    </container>
+   <container>
+  <row class="editorial">
+    <h1>Hi customer,</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+  </row>
+<row class="product">
+    <column large="6" small="12">
+      <a href="#"><img src="https://via.placeholder.com/900" alt="PRODUCTNAME" infer="" /></a>
+    </column>
+
+    <column class="product__description" large="6" small="12">
+      <h2>Hoodie</h2>
+
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+      <block class="product__price">49.99€</block>
+      <button href="#">Add to cart</button>
+    </column>
+  </row>
+
+  <row class="product">
+    <column large="6" small="12">
+      <a href="#"><img src="https://via.placeholder.com/900" alt="PRODUCTNAME" infer="" /></a>
+    </column>
+
+    <column class="product__description" large="6" small="12">
+      <h2>Jeans</h2>
+
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+      <block class="product__price">39.99€</block>
+      <button href="#">Add to cart</button>
+    </column>
+  </row>
+
+  <row class="product__list">
+    <column small="12">
+      <a href="#"><img src="https://via.placeholder.com/900" alt="PRODUCTNAME" infer="" /></a>
+      <h2>Shirt</h2>
+      <block class="product__price--small">9.99€</block>
+      <button href="#">Add to cart</button>
+    </column>
+    <column small="12">
+      <a href="#"><img src="https://via.placeholder.com/900" alt="PRODUCTNAME" infer="" /></a>
+      <h2>Socks</h2>
+      <block class="product__price--small">4.99€</block>
+      <button href="#">Add to cart</button>
+    </column>
+    <column small="12">
+      <a href="#"><img src="https://via.placeholder.com/900" alt="PRODUCTNAME" infer="" /></a>
+      <h2>Sneaker</h2>
+      <block class="product__price--small">119.99€</block>
+      <button href="#">Add to cart</button>
+    </column>
+  </row>
+
+  <row class="footer">
+      <column>
+        <p>
+          COMPANY<br/>
+          STREET 123<br/>
+          123456 CITY<br/>
+          <a href="mailto:#">MAIL@DOMAIN:COM</a>
+         </p>
+
+         <p>© 2021 COMPANY</p>
+      </column>
+      <column>
+        <p>
+          <a href="#"><img class="social-icon" src="https://via.placeholder.com/48" alt="Facebook" width="30" /></a>
+          <a href="#"><img class="social-icon" src="https://via.placeholder.com/48" alt="Twitter" width="30" /></a>
+          <a href="#"><img class="social-icon" src="https://via.placeholder.com/48" alt="Instagram" width="30" /></a>
+        </p>
+
+        <p>
+           <a href="#">Legal notice</a><br/>
+        <a href="#">Unsubscribe</a>
+        </p>
+      </column>
+  </row>
+</container>
+  </body>
+</heml>
